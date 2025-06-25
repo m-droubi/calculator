@@ -1,6 +1,26 @@
+@font-face {
+    font-family: 'fira_sansbook_italic';
+    src: url(fonts/firasans-bookitalic-webfont.woff2) format('woff2'),
+         url(fonts/firasans-bookitalic-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(60, 179, 5);
+}
+* {
+    border-radius: 10px;
+}
 #frame {
+    
+    margin: auto;
     width: 180px;
- 
+    box-shadow: 5px 5px 10px rgb(54, 48, 48);
     border: 5px black;
     background-color:  rgb(0, 0, 0);
     display: flex;
@@ -11,29 +31,41 @@
     width: 170px;
     height: 45px;
     margin-top: 5px;
-    border: 2px black;
+    
     display: flex;
 }
 #screen {
     height: 40px;
     width: 140px;
     background-color: rgb(255, 255, 255);
-    border: 2px black;
-    text-wrap: wrap;
     
-    
+    box-sizing: border-box;
+    border: 3px solid green;
+    padding: 10px;
+    padding-left: 2px;
+    padding-right: 2px;
 }
 button {
+    color: aliceblue;
+    font-weight: 900;
     height: 40px;
     width: 40px;
     margin-bottom: 2px;
-    background-color: rgb(240, 235, 229);
+    background-color: rgb(150, 143, 143)
+    
 }
 .calculator {
+    
     margin: 5px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     width: 170px;
     
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20vh;
+    font-family: 'fira_sansbook_italic';
 }
